@@ -1,0 +1,68 @@
+filetype on
+execute pathogen#infect()
+syntax on
+filetype plugin on
+filetype indent on    "indents based on type of file (e.g. Python, Makefiles)
+
+syntax enable         "color text based on syntax
+colorscheme solarized           "solarized
+set background=dark
+let g:solarized_termcolors=256  "solarized
+let &t_Co=256                   "solarized
+set number            "turn line numbers on
+set cursorline        "highlight current line
+
+" highlight columns over length 80
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
+
+" another way to highlight columns
+highlight ColorColumn ctermbg=58
+call matchadd('ColorColumn', '\%81v', 100)
+
+" vim-indent-guides: nathanaelkane
+let g:indent_guides_enable_on_vim_startup=1
+"let g:indent_guides_auto_colors = 0
+"hi IndentGuidesOdd  ctermbg=black
+"hi IndentGuidesEven ctermbg=darkgrey
+let g:indent_guides_start_level= 2
+let g:indent_guides_guide_size = 1
+
+set autoread          " doesn't work unless you run a command like !ls
+                      " there are ways to work around this, check stackoverflow
+set wildmenu          " graphical help for tab completes
+set lazyredraw        " don't redraw during macros
+"set showmatch         " highlight matching () or [], etc.
+  " seems to still work while turned off?
+set incsearch         " search as characters are entered
+set hlsearch          " higlight matches
+
+set shiftwidth=2
+set tabstop=2
+set expandtab         " Turn tabs into spaces on load (BAD FOR MAKEFILES!)
+"set autoindent
+"set smartindent
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+set foldenable        " Enable folding
+set foldlevelstart=10 " Open most folds by default
+set foldmethod=indent " Fold based on indent
+set foldnestmax=10    " 10 nested fold max
+set foldlevel=1
+
+"Doesnt work.. yet
+"install pathogen & solaris!
+"highlight Folded guibg=grey guifg=blue
+
+"Enables both Python2 & 3 hightlighting in ~./vim/syntax/python.vim
+let python_highlight_all = 1
+
+"can't seem to figure out keybindings. every time I bind one thing, everything
+"else gets messed up
+"map <esc> <nop>
+"map jk <esc>
+"map <Up> <nop>
+"map <Left> <nop>
+"map <Right> <nop>
+"map <Down> <nop>

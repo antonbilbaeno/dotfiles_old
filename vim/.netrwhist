@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/anton/proj/gitpcb'
+let g:netrw_dirhist_2='/opt/eagle-6.6.0/scr'
+let g:netrw_dirhist_3='/etc/apt/sources.list.d'
+let g:netrw_dirhist_4='/home/anton/proj/ratetable/driver/py/test'
+let g:netrw_dirhist_5='/home/anton/src/onedrive/src'
+let g:netrw_dirhist_6='/home/anton/.dotfiles/.dotbot/bin'
