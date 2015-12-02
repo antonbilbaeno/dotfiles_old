@@ -1,0 +1,113 @@
+# Anton Bilbaeno
+# Eagle CAD V6.6.0
+# Keyboard Shortcuts Configuration Script
+# Last Updated: 10/26/2015
+# Linux, Ubuntu 14.04
+#
+# General Advice 
+# from: http://www.element14.com/community/thread/19607/l/eagle-and-shortcuts?displayFullThread=true
+# Tilmann Reh Aug 28, 2012 2:10 PM
+## During normal work, the command line has the focus for every keyboard
+## input, so you can always just type.
+## 
+## Second, all commands can be abbreviated to some extent. The list of
+## commands is searched in alphabetical order and the first match is taken,
+## for example
+## i    means "INFO"
+## d    means "DISPLAY"
+## m    means "MARK"
+## mi   means "MIRROR"
+## mit  means "MITER"
+## mo   means "MOVE"
+## etc. pp.
+##
+## Third, you can ASSIGN function keys and alt/ctl-key combinations to
+## specific commands. IIRC (if I remember correctly), several function keys are predefined after
+## installation (however I made my own setup for the commands I need the most).
+##
+## EAGLE works somewhat different to other CAD software with single-key
+## shortcuts, however once you get used to the omnipresent command line
+## you'll also see the benefits. I always have one hand at the trackball
+## and the other on the keyboard when working with EAGLE. It's extremely
+## convenient and fast - but probably you need some training before.
+
+#GENERAL: ## don't need to actually #DEFINE general shortcuts
+ASSIGN C+M MOVE;
+ASSIGN C+Z UNDO;
+ASSIGN C+Y REDO;
+ASSIGN CS+C COPY;
+ASSIGN CS+A ADD;
+ASSIGN C+L LABEL;
+ASSIGN C+G GROUP;
+ASSIGN C+D DELETE;
+ASSIGN C+W WIRE;
+ASSIGN C+I INFO;
+ASSIGN C+T TEXT;
+ASSIGN C+N NAME;
+ASSIGN CS+P POLYGON;
+ASSIGN C+F 'RUN find.ulp';
+# ASSIGN C+X CHANGE;
+# ASSIGN A+A ATTRIBUTE;
+ASSIGN F2 WINDOW FIT;
+# SHOW GND
+# SHOW VCC
+
+SCH:
+ASSIGN C+E ERRORS;
+ASSIGN CS+E ERC;
+ASSIGN CS+I INVOKE;
+ASSIGN CS+V VALUE;
+ASSIGN CS+S SMASH;
+ASSIGN A+N NET;
+# Wire ..
+# Insert package
+# Insert text
+# 
+# 
+
+BRD:
+ASSIGN CS+V VALUE;
+ASSIGN C+R ROUTE;
+ASSIGN CS+R RIPUP;
+ASSIGN A+R RATSNEST;
+ASSIGN C+H HOLE;
+ASSIGN CS+S SMASH;
+ASSIGN A+S SIGNAL;
+ASSIGN F2 WINDOW FIT;
+ASSIGN F3 GRID ON MM 0.5 ALT MM 0.25;
+ASSIGN F4 GRID ON MIL 3 ALT MIL 1.5;
+ASSIGN F5 GRID ON MIL FINEST ALT MIL FINEST;
+ASSIGN F8 DISPLAY ALL;
+# Display Top
+ASSIGN F9 DISPLAY NONE 1 17 18 19 20 21 23 25 27 29 31 33 35 37 39 41 43 44 45 46 47 48 49 51 105 108 109;
+# Display 2nd Layer
+ASSIGN F11 DISPLAY NONE 15 17 18 19 20 22 24 26 28 30 32 34 36 38 40 42 43 44 45 46 47 48 49 52 106 108 109;
+# Display 3rd Layer
+ASSIGN F12 DISPLAY NONE 16 17 18 19 20 22 24 26 28 30 32 34 36 38 40 42 43 44 45 46 47 48 49 52 106 108 109;
+# Display Bottom
+# Display Layers for Assembly
+ASSIGN C+E ERRORS;
+ASSIGN CS+D 'DRC;';  # Executes DRC without opening DRC dialog. For dialog sk
+# ASSIGN CS+D DRC;    # Opens DRC dialog.
+# run Electrical Rule Check
+# generate Gerbers
+ASSIGN F10 DISPLAY NONE 2 17 18 19 20 21 23 25 27 29 31 33 35 37 39 41 43 44 45 46 47 48 49 51 105 108 109;
+
+LBR:
+ASSIGN C+E EDIT;
+
+DEV:
+ASSIGN A+C CONNECT;
+ASSIGN A+P PACKAGE;
+
+SYM:
+ASSIGN A+P PIN;
+# wire
+
+PAC:
+ASSIGN C+H HOLE;
+ASSIGN A+P PAD;
+ASSIGN A+S SMD;
+# grid
+# other grid
+# other grid

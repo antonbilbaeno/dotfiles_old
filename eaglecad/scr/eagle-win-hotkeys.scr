@@ -1,0 +1,47 @@
+# Keyboard Assignments
+# Eagle 6.5.0
+# Anton Bilbaeno
+# 8/10/13
+# Windows
+
+SCH:
+ASSIGN C+BS Delete
+ASSIGN C+C Copy
+ASSIGN C+V Paste
+ASSIGN A+F2 Window fit
+ASSIGN C+G Group
+ASSIGN C+L Label
+ASSIGN C+N Name
+ASSIGN CS+V Value
+ASSIGN C+M Move
+ASSIGN C+N Name
+ASSIGN C+W Wire
+ASSIGN F5 ERC
+ASSIGN F6 BOARD
+
+BRD:
+ASSIGN F1 grid on mil 25 alt mil 12.5
+ASSIGN F2 grid on mil 12.5 alt mil 6.25
+ASSIGN A+F2 Window fit
+ASSIGN F3 Ratsnest
+ASSIGN F5 ERC
+ASSIGN F6 'DRC;'
+ASSIGN F10 run normalize-text
+ASSIGN A+F11 display none 17 18 20 21 23 27 31 45 51									#silkscreen layers
+ASSIGN F12 display none 1 16 17 18 19 20 21 22 23 24 25 26 27 28 39 40 41 42 48 49 50 51 52 56 101 102 104 116 121 122 151 254		#default layers
+ASSIGN A+F12 display none 20 21 23 25 27 31 45 51 										#assembly layers
+ASSIGN C+BS Delete
+ASSIGN C+C Copy
+ASSIGN C+V Paste
+ASSIGN C+G Group
+ASSIGN C+L Label
+ASSIGN C+N Name
+ASSIGN CS+V Value
+ASSIGN C+M Move
+ASSIGN C+N Name
+ASSIGN C+W Route
+ASSIGN A+W Ripup
+ASSIGN C+T display None Top tOrigins tPlace tNames tValues tDocu tKeepout tRestrict Dimension Pad Via Holes Milling					#top layers
+ASSIGN C+B display None Bottom bOrigins bPlace bNames bValues bDocu bKeepout bRestrict Dimension Pad Via Holes Milling				#bottom layers
+ASSIGN C+U display Unrouted
+ASSIGN CS+U display -unrouted
